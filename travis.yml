@@ -1,5 +1,15 @@
+dist: xenial
+
 language: go
+
 go:
-  - "1.11.x"
+  - 1.11.x
+
+git:
+  depth: 1
+
+notifications:
+  email: false
+
 script:
-    - go test -v ./...
+  - go test ./...
